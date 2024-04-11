@@ -1,25 +1,18 @@
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import AboutMe from "./pages/AboutMe";
-import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
-import Resume from "./pages/Resume";
+import { Outlet } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import './index.css';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      {/* Other content */}
-    </div>
+    <>
+      <Header />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </>
   );
 }
 
-export default App;
-
-
-
-
-
-
-
+export default App

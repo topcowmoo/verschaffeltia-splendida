@@ -1,11 +1,4 @@
 import Navbar from "./Navbar";
-// {import "styles or see how it goes with tailwind alone ";}
-
-
- {/*put in tailwind styling in header tag*/}
-    {/* put in logo styling if */}
-
-
 
 function Header() {
   return (

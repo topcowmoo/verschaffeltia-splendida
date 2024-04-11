@@ -7,7 +7,19 @@ import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 
 function App() {
-  return <div>App</div>;
+  return (
+    <div>
+      <Navbar />
+      {/* Other content */}
+    </div>
+  );
 }
 
 export default App;
+
+
+
+
+
+
+

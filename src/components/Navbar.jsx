@@ -1,51 +1,57 @@
-import { Link, useLocation } from 'react-router-dom';
+// import useState from react
+import { useState } from 'react';
 
-// Here we are using object destructuring assignment to pluck off our variables from the props object
-// We assign them to their own variable names
 function Navbar() {
-  const currentPage = useLocation().pathname;
+  // add state
+  const [isActive, setIsActive] = useState(false);
+
+  // toggle active class
+  const toggleActiveClass = () => {
+    setIsActive(!isActive);
+  };
+
+  // remove active class
+  const removeActive = () => {
+    setIsActive(false);
+  };
 
   return (
-    <ul className="nav nav-tabs">
-      <li className="nav-item">
-        <Link
-          to="/"
-          // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-          // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-          className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
-        >
-          Home
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/About"
-          // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}
-        >
-          About
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/Blog"
-          // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === '/Blog' ? 'nav-link active' : 'nav-link'}
-        >
-          Blog
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/Contact"
-          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
-        >
-          Contact
-        </Link>
-      </li>
-    </ul>
+    <div className="App">
+      <header className="App-header">
+      <nav className="flex items-center justify-between px-4 py-2 bg-blue-200 bg-opacity-75 text-gray-900">
+
+          {/* navbar */}
+          <ul className={`md:flex ${isActive ? 'block' : 'hidden'}`}>
+            <li onClick={removeActive}>
+              <a href="#home" className="block px-2 py-1 hover:text-blue-400">Home</a>
+            </li>
+            <li onClick={removeActive}>
+              <a href="#aboutme" className="block px-2 py-1 hover:text-blue-400">About Me</a>
+            </li>
+            <li onClick={removeActive}>
+              <a href="#projects" className="block px-2 py-1 hover:text-blue-400">Projects</a>
+            </li>
+            <li onClick={removeActive}>
+              <a href="#contact" className="block px-2 py-1 hover:text-blue-400">Contact</a>
+            </li>
+            <li onClick={removeActive}>
+              <a href="#resume" className="block px-2 py-1 hover:text-blue-400">Resume</a>
+            </li>
+          </ul>
+
+          {/* hamburger menu */}
+          <div className="md:hidden">
+            <button onClick={toggleActiveClass}>
+              <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </header>
+    </div>
   );
 }
 
+// export Navbar component for use
 export default Navbar;

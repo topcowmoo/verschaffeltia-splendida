@@ -3,9 +3,9 @@ import { useFormik } from "formik";
 const validate = (values) => {
   const errors = {};
   if (!values.name) {
-    errors.Name = "Required";
-  } else if (values.Name.length > 20) {
-    errors.firstName = "Must be 20 characters or less";
+    errors.name = "Required";
+  } else if (values.name.length > 20) {
+    errors.name = "Must be 20 characters or less";
   }
 
   if (!values.email) {
@@ -26,49 +26,64 @@ const validate = (values) => {
 const Contact = () => {
   const formik = useFormik({
     initialValues: {
-      firstName: "",
-      lastName: "",
+      name: "",
       email: "",
+      message: "",
     },
     validate,
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
     },
   });
+
   return (
-    <form onSubmit={formik.handleSubmit}>
-      <label htmlFor="firstName">First Name</label>
-      <input
-        id="firstName"
-        name="firstName"
-        type="text"
-        onChange={formik.handleChange}
-        value={formik.values.firstName}
-      />
-      {formik.errors.firstName ? <div>{formik.errors.firstName}</div> : null}
-
-      <label htmlFor="lastName">Last Name</label>
-      <input
-        id="lastName"
-        name="lastName"
-        type="text"
-        onChange={formik.handleChange}
-        value={formik.values.lastName}
-      />
-      {formik.errors.lastName ? <div>{formik.errors.lastName}</div> : null}
-
-      <label htmlFor="email">Email Address</label>
-      <input
-        id="email"
-        name="email"
-        type="email"
-        onChange={formik.handleChange}
-        value={formik.values.email}
-      />
-      {formik.errors.email ? <div>{formik.errors.email}</div> : null}
-
-      <button type="submit">Submit</button>
-    </form>
+    <div className="max-w-md mx-auto mt-8"> {/* Added margin-top */}
+      <form onSubmit={formik.handleSubmit} className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-2xl border-4 border-mygray">
+        <div className="mb-4">
+          <label htmlFor="name" className="block text-gray-700">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            onChange={formik.handleChange}
+            value={formik.values.name}
+            className="mt-1 p-2 w-full border border-myaccent rounded-md focus:outline-none focus:ring-myaccent focus:border-myaccent"
+          />
+          {formik.errors.name ? <div className="text-red-500">{formik.errors.name}</div> : null}
+        </div>
+        <div className="mb-4">
+          <label htmlFor="email" className="block text-gray-700">Email Address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            onChange={formik.handleChange}
+            value={formik.values.email}
+            className="mt-1 p-2 w-full border border-myaccent rounded-md focus:outline-none focus:ring-myaccent focus:border-myaccent"
+          />
+          {formik.errors.email ? <div className="text-red-500">{formik.errors.email}</div> : null}
+        </div>
+        <div className="mb-4">
+          <label htmlFor="message" className="block text-gray-700">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            onChange={formik.handleChange}
+            value={formik.values.message}
+            className="mt-1 p-2 w-full border border-myaccent rounded-md focus:outline-none focus:ring-myaccent focus:border-myaccent"
+          />
+          {formik.errors.message ? <div className="text-red-500">{formik.errors.message}</div> : null}
+        </div>
+        <div className="flex justify-center"> {/* Centered button container */}
+          <button
+            type="submit"
+            className="bg-mygray hover:bg-accent text-white hover:text-mygray font-bold py-2 px-4 rounded shadow-lg"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
   );
 };
 

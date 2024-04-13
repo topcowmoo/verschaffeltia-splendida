@@ -17,13 +17,14 @@ function Navbar() {
   return (
     <div className="App">
       <header className="App-header">
-        <nav className="sticky bottom-0 flex items-center justify-between px-4 py-2 text-black">
+        <nav className="sticky bottom-0 flex items-center justify-between px-4 py-2 text-black text-lg">
           <ul className={`md:flex ${isActive ? "block" : "hidden"}`}>
             <li onClick={removeActive}>
               <Link
                 to="/"
                 className={classNames("block px-2 py-1 hover:text-accent", {
                   "text-accent": location.pathname === "/",
+                  "animate-pulse": location.pathname === "/",
                 })}
               >
                 Home
@@ -34,6 +35,7 @@ function Navbar() {
                 to="/about"
                 className={classNames("block px-2 py-1 hover:text-accent", {
                   "text-accent": location.pathname === "/about",
+                  "animate-pulse": location.pathname === "/about",
                 })}
               >
                 Me
@@ -44,6 +46,7 @@ function Navbar() {
                 to="/projects"
                 className={classNames("block px-2 py-1 hover:text-accent", {
                   "text-accent": location.pathname === "/projects",
+                  "animate-pulse": location.pathname === "/projects",
                 })}
               >
                 Projects
@@ -54,6 +57,7 @@ function Navbar() {
                 to="/contact"
                 className={classNames("block px-2 py-1 hover:text-accent", {
                   "text-accent": location.pathname === "/contact",
+                  "animate-pulse": location.pathname === "/contact",
                 })}
               >
                 Contact
@@ -64,6 +68,7 @@ function Navbar() {
                 to="/resume"
                 className={classNames("block px-2 py-1 hover:text-accent", {
                   "text-accent": location.pathname === "/resume",
+                  "animate-pulse": location.pathname === "/resume",
                 })}
               >
                 Resume

@@ -7,11 +7,11 @@ export default {
         sans: ["Kalam", "sans-serif"],
       },
       colors: {
-        "mygray": "#454545",
-        "accent": "#FFB2B2",
-        "accent2": "#65A2FF",
-      }
+        mygray: "#454545",
+        accent: "	#f2edde",
+        accent2: "#65A2FF",
       },
     },
+  },
   plugins: [],
 };

@@ -1,18 +1,21 @@
-import { Outlet } from 'react-router-dom';
-import Header from './components/Header';
-import { FooterWithSocialLinks } from './components/Footer';
-import './index.css';
+// App.js
+import { Outlet } from "react-router-dom";
+import { FooterWithSocialLinks } from "./components/Footer";
+import "./index.css";
+import background from "./assets/images/Technology.png";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <>
+    <div
+      className="min-h-screen bg-cover bg-center"
+      style={{ backgroundImage: `url(${background})` }}
+    >
       <Header />
-      <main>
-        <Outlet />
-      </main>
+      <Outlet />
       <FooterWithSocialLinks />
-    </>
+    </div>
   );
 }
 
-export default App
+export default App;

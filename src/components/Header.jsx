@@ -1,10 +1,16 @@
+// Header.js
 import Navbar from "./Navbar";
-import logo from "../assets/images/logonb.png";
 
 function Header() {
   return (
-    <header className="sticky top-0 bg-blue-100 flex justify-between items-center mx-auto p-7 text-lg w-full">
-      <img src={logo} alt="Logo" className="h-10 w-auto" />
+    <header className="relative overflow-hidden flex justify-between items-center">
+      {/* Your logo */}
+      <div className="flex items-center">
+        <h1 className="text-3xl font-bold ml-4">S/M</h1>
+        {/* You can style the logo as needed */}
+      </div>
+      
+      {/* Include Navbar component */}
       <Navbar />
     </header>
   );

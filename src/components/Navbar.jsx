@@ -1,16 +1,15 @@
-// import useState from react
-import { useState } from 'react';
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import classNames from "classnames";
 
 function Navbar() {
-  // add state
   const [isActive, setIsActive] = useState(false);
+  const location = useLocation();
 
-  // toggle active class
   const toggleActiveClass = () => {
     setIsActive(!isActive);
   };
 
-  // remove active class
   const removeActive = () => {
     setIsActive(false);
   };
@@ -18,32 +17,74 @@ function Navbar() {
   return (
     <div className="App">
       <header className="App-header">
-      <nav className="flex items-center justify-between px-4 py-2 bg-blue-200 bg-opacity-75 text-gray-900">
-
-          {/* navbar */}
-          <ul className={`md:flex ${isActive ? 'block' : 'hidden'}`}>
+        <nav className="sticky bottom-0 flex items-center justify-between px-4 py-2 text-black">
+          <ul className={`md:flex ${isActive ? "block" : "hidden"}`}>
             <li onClick={removeActive}>
-              <a href="#home" className="block px-2 py-1 hover:text-blue-400">Home</a>
+              <Link
+                to="/"
+                className={classNames("block px-2 py-1 hover:text-accent", {
+                  "text-accent": location.pathname === "/",
+                })}
+              >
+                Home
+              </Link>
             </li>
             <li onClick={removeActive}>
-              <a href="#aboutme" className="block px-2 py-1 hover:text-blue-400">About Me</a>
+              <Link
+                to="/about"
+                className={classNames("block px-2 py-1 hover:text-accent", {
+                  "text-accent": location.pathname === "/about",
+                })}
+              >
+                Me
+              </Link>
             </li>
             <li onClick={removeActive}>
-              <a href="#projects" className="block px-2 py-1 hover:text-blue-400">Projects</a>
+              <Link
+                to="/projects"
+                className={classNames("block px-2 py-1 hover:text-accent", {
+                  "text-accent": location.pathname === "/projects",
+                })}
+              >
+                Projects
+              </Link>
             </li>
             <li onClick={removeActive}>
-              <a href="#contact" className="block px-2 py-1 hover:text-blue-400">Contact</a>
+              <Link
+                to="/contact"
+                className={classNames("block px-2 py-1 hover:text-accent", {
+                  "text-accent": location.pathname === "/contact",
+                })}
+              >
+                Contact
+              </Link>
             </li>
             <li onClick={removeActive}>
-              <a href="#resume" className="block px-2 py-1 hover:text-blue-400">Resume</a>
+              <Link
+                to="/resume"
+                className={classNames("block px-2 py-1 hover:text-accent", {
+                  "text-accent": location.pathname === "/resume",
+                })}
+              >
+                Resume
+              </Link>
             </li>
           </ul>
 
-          {/* hamburger menu */}
           <div className="md:hidden">
             <button onClick={toggleActiveClass}>
-              <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              <svg
+                className="w-6 h-6 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
               </svg>
             </button>
           </div>
@@ -53,5 +94,4 @@ function Navbar() {
   );
 }
 
-// export Navbar component for use
 export default Navbar;

@@ -38,7 +38,7 @@ const Contact = () => {
 
   return (
     <div className="max-w-md mx-auto mt-8">
-      <form onSubmit={formik.handleSubmit} className="bg-gray-50 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-2xl border-4 border-mygray">
+      <form onSubmit={formik.handleSubmit} className="bg-gray-50 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-[rgba(0,_0,_0,_1)_0px_30px_90px]">
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-700">Name</label>
           <input
@@ -77,7 +77,7 @@ const Contact = () => {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="bg-mygray hover:bg-accent text-white font-bold py-2 px-4 rounded shadow-lg"
+            className="bg-black hover:bg-accent text-white font-bold py-2 px-4 rounded shadow-lg"
           >
             Submit
           </button>

@@ -2,14 +2,15 @@ import date from "../assets/images/date.png";
 
 const About = () => {
   return (
-    <div className="container bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-2xl border-4 border-mygray mt-20 mx-auto text-center md:text-left">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-center">
+    <div className="mt-10 pt-5">
+      <div className="container flex bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg shadow-[rgba(0,_0,_0,_1)_0px_30px_90px] mx-auto mb-8 p-6 mt-5">
         <img
           src={date}
           alt="palm tree"
-          className="rounded-lg shadow-lg w-1/2"
+          className="w-1/2 h-auto rounded-lg shadow-lg mr-4"
+          style={{ maxWidth: "450px", height: "350px" }}
         />
-        <div className="mt-4 text-lg">
+        <div className="text-lg flex flex-col justify-center">
           <p>
             Hey, I&apos;m Salvatore Mammoliti ~ a multidisciplinary full-stack
             web developer specialized in everything HTML, CSS, JavaScript,

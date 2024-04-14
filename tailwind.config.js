@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Kalam", "sans-serif"],
+        sans: ["Poppins", "sans-serif"],
       },
       colors: {
         mygray: "#454545",
-        accent: "#ff007f",
+        accent: "#bf3eff",
       },
     },
   },

@@ -6,7 +6,7 @@ function Header() {
     <header className="relative overflow-hidden flex justify-between items-center">
       {/* Your logo */}
       <div className="flex items-center">
-        <h1 className="text-3xl font-bold ml-4">S<span className="text-accent text-4xl">/</span>M</h1>
+        <h1 className="text-3xl text-black ml-4">S<span className="text-accent text-4xl">/</span>M</h1>
         {/* You can style the logo as needed */}
       </div>
       

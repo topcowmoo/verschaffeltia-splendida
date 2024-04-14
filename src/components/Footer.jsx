@@ -10,11 +10,11 @@ export function FooterWithSocialLinks() {
           href="https://github.com/topcowmoo"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-mygray hover:text-accent"
+          className="text-black hover:text-accent"
         >
           Salvatore Mammoliti
         </a>
-        <div className="ml-2 text-xs text-mygray">&copy; {currentYear}</div>
+        <div className="ml-2 text-xs text-black">&copy; {currentYear}</div>
       </div>
       <div className="flex gap-4">
         <a
@@ -23,7 +23,7 @@ export function FooterWithSocialLinks() {
           rel="noopener noreferrer"
           className="text-myaccent hover:text-accent"
         >
-          <SiGithub size={29} />
+          <SiGithub size={36} />
         </a>
         <a
           href="https://www.linkedin.com/in/salvatore-mammoliti-694b6b28b/"
@@ -31,7 +31,7 @@ export function FooterWithSocialLinks() {
           rel="noopener noreferrer"
           className="text-myaccent hover:text-accent"
         >
-          <SiLinkedin size={28} />
+          <SiLinkedin size={36} />
         </a>
         <a
           href="https://www.frontendmentor.io/profile/topcowmoo"
@@ -39,7 +39,7 @@ export function FooterWithSocialLinks() {
           rel="noopener noreferrer"
           className="text-myaccent hover:text-accent"
         >
-          <SiFrontendmentor size={23} />
+          <SiFrontendmentor size={36} />
         </a>
       </div>
     </footer>

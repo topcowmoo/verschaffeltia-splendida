@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="px-6 py-20 text-left ml-10 mt-20 text-surface dark:text-white">
-      <h1 className="mb-6 text-5xl font-bold text-mygray">
+      <h1 className="mb-6 text-5xl font-bold text-black">
         Salvatore Mammoliti
       </h1>
-      <h3 className="mb-8 text-3xl font-bold text-mygray">
+      <h3 className="mb-8 text-3xl font-bold text-black">
         Full-Stack Web Developer
       </h3>
       {/* Use button element to navigate to portfolio page */}
-      <button className="bg-mygray hover:bg-accent text-white font-bold py-2 px-4 rounded shadow">
+      <button className="bg-black hover:bg-accent text-white font-bold py-2 px-4 rounded shadow">
         <Link to="/Projects" className="hover:no-underline focus:no-underline">
           Have a look at my work!
         </Link>

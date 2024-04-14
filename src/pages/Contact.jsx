@@ -37,8 +37,8 @@ const Contact = () => {
   });
 
   return (
-    <div className="max-w-md mx-auto mt-8"> {/* Added margin-top */}
-      <form onSubmit={formik.handleSubmit} className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-2xl border-4 border-mygray">
+    <div className="max-w-md mx-auto mt-8">
+      <form onSubmit={formik.handleSubmit} className="bg-gray-50 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-2xl border-4 border-mygray">
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-700">Name</label>
           <input
@@ -47,7 +47,7 @@ const Contact = () => {
             type="text"
             onChange={formik.handleChange}
             value={formik.values.name}
-            className="mt-1 p-2 w-full border border-myaccent rounded-md focus:outline-none focus:ring-myaccent focus:border-myaccent"
+            className="mt-1 p-2 w-full border border-gray-200 rounded-md focus:outline-none focus:ring-myaccent focus:border-myaccent"
           />
           {formik.errors.name ? <div className="text-red-500">{formik.errors.name}</div> : null}
         </div>
@@ -59,7 +59,7 @@ const Contact = () => {
             type="email"
             onChange={formik.handleChange}
             value={formik.values.email}
-            className="mt-1 p-2 w-full border border-myaccent rounded-md focus:outline-none focus:ring-myaccent focus:border-myaccent"
+            className="mt-1 p-2 w-full border border-gray-200 rounded-md focus:outline-none focus:ring-myaccent focus:border-myaccent"
           />
           {formik.errors.email ? <div className="text-red-500">{formik.errors.email}</div> : null}
         </div>
@@ -70,11 +70,11 @@ const Contact = () => {
             name="message"
             onChange={formik.handleChange}
             value={formik.values.message}
-            className="mt-1 p-2 w-full border border-myaccent rounded-md focus:outline-none focus:ring-myaccent focus:border-myaccent"
+            className="mt-1 p-2 w-full border border-gray-200 rounded-md focus:outline-none focus:ring-myaccent focus:border-myaccent"
           />
           {formik.errors.message ? <div className="text-red-500">{formik.errors.message}</div> : null}
         </div>
-        <div className="flex justify-center"> {/* Centered button container */}
+        <div className="flex justify-center">
           <button
             type="submit"
             className="bg-mygray hover:bg-accent text-white hover:text-mygray font-bold py-2 px-4 rounded shadow-lg"

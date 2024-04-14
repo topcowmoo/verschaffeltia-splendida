@@ -1,3 +1,5 @@
+import { SiGithub, SiLinkedin, SiFrontendmentor } from "react-icons/si";
+
 const currentYear = new Date().getFullYear();
 
 export function FooterWithSocialLinks() {
@@ -19,37 +21,25 @@ export function FooterWithSocialLinks() {
           href="https://github.com/topcowmoo"
           target="_blank"
           rel="noopener noreferrer"
+          className="text-myaccent hover:text-accent"
         >
-          <img
-            width="29"
-            height="29"
-            src="https://img.icons8.com/stickers/100/github.png"
-            alt="github"
-          />
+          <SiGithub size={29} />
         </a>
         <a
           href="https://www.linkedin.com/in/salvatore-mammoliti-694b6b28b/"
           target="_blank"
           rel="noopener noreferrer"
+          className="text-myaccent hover:text-accent"
         >
-          <img
-            width="28"
-            height="28"
-            src="https://img.icons8.com/stickers/100/linkedin.png"
-            alt="linkedin"
-          />
+          <SiLinkedin size={28} />
         </a>
         <a
           href="https://www.frontendmentor.io/profile/topcowmoo"
           target="_blank"
           rel="noopener noreferrer"
+          className="text-myaccent hover:text-accent"
         >
-          <img
-            width="23"
-            height="23"
-            src="https://asset.brandfetch.io/id-7PJzcYu/idDksQWGNy.jpeg"
-            alt="Frontend Mentor Logo"
-          />
+          <SiFrontendmentor size={23} />
         </a>
       </div>
     </footer>

@@ -17,19 +17,13 @@ export function FooterWithSocialLinks() {
         <div className="ml-2 text-xs">&copy; {currentYear}</div>
       </div>
       <div className="flex gap-4">
-        <a
-          href="https://github.com/topcowmoo"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-myaccent hover:text-accent"
-        >
-          <SiGithub size={36} />
-        </a>
+       
         <a
           href="https://www.linkedin.com/in/salvatore-mammoliti-694b6b28b/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-myaccent hover:text-accent"
+          title="Linkedin Profile"
         >
           <SiLinkedin size={36} />
         </a>
@@ -38,8 +32,18 @@ export function FooterWithSocialLinks() {
           target="_blank"
           rel="noopener noreferrer"
           className="text-myaccent hover:text-accent"
+          title="Frontend Mentor Profile"
         >
           <SiFrontendmentor size={36} />
+        </a>
+        <a
+          href="https://github.com/topcowmoo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-myaccent hover:text-accent"
+          title="Github Profile"
+        >
+          <SiGithub size={36} />
         </a>
       </div>
     </footer>

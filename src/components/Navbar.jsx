@@ -77,10 +77,10 @@ function Navbar() {
             </li>
           </ul>
 
-          <div className="md:hidden">
+          <div className="md:hidden" aria-label="Toggle navigation menu">
             <button onClick={toggleActiveClass}>
               <svg
-                className="w-6 h-6 text-mygray"
+                className="w-6 h-6 text-black"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

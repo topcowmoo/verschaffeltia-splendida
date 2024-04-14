@@ -16,9 +16,9 @@ const Projects = () => {
   return (
     <div className="p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
       {/* Card 1 */}
-      <div className= "bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg shadow-[rgba(0,_0,_0,_1)_0px_30px_90px] mx-auto mb-8 p-6 mt-5 lg:mt-0">
+      <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg shadow-[rgba(0,_0,_0,_1)_0px_30px_90px] mx-auto mb-8 p-6 mt-5 lg:mt-0">
         <div className="rounded overflow-hidden shadow-lg">
-          <img className="w-full" src={mvc} alt="screenshot" />
+          <img className="w-full" src={mvc} alt="a screenshot of a tech blog" />
           <div className="px-6 py-4">
             <div className="font-bold text-xl text-center mb-2">
               Dry MVC Tech Blog
@@ -48,7 +48,11 @@ const Projects = () => {
       {/* Card 2 */}
       <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg shadow-[rgba(0,_0,_0,_1)_0px_30px_90px] mx-auto mb-8 p-6 mt-5 lg:mt-0">
         <div className="rounded overflow-hidden shadow-lg">
-          <img className="w-full" src={mongo} alt="screenshot" />
+          <img
+            className="w-full"
+            src={mongo}
+            alt="a screenshot of a social network"
+          />
           <div className="px-6 py-4">
             <div className="font-bold text-xl text-center mb-2">
               Heavy Maze Social Network
@@ -77,7 +81,11 @@ const Projects = () => {
       {/* Card 3 */}
       <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg shadow-[rgba(0,_0,_0,_1)_0px_30px_90px] mx-auto mb-8 p-6 mt-5 lg:mt-0">
         <div className="rounded overflow-hidden shadow-lg">
-          <img className="w-full" src={pwa} alt="screenshot" />
+          <img
+            className="w-full"
+            src={pwa}
+            alt="a screenshot of a text editor"
+          />
           <div className="px-6 py-4">
             <div className="font-bold text-xl text-center mb-2">
               Just Another Text Editor
@@ -108,7 +116,11 @@ const Projects = () => {
       {/* Card 4 */}
       <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg shadow-[rgba(0,_0,_0,_1)_0px_30px_90px] mx-auto mb-8 p-6 mt-5 lg:mt-0">
         <div className="rounded overflow-hidden shadow-lg">
-          <img className="w-full" src={api} alt="screenshot" />
+          <img
+            className="w-full"
+            src={api}
+            alt="a screenshot of a weather interface"
+          />
           <div className="px-6 py-4">
             <div className="font-bold text-xl text-center mb-2">
               Effective Weather Interface
@@ -139,7 +151,7 @@ const Projects = () => {
       {/* Card 5 */}
       <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg shadow-[rgba(0,_0,_0,_1)_0px_30px_90px] mx-auto mb-8 p-6 mt-5 lg:mt-0">
         <div className="rounded overflow-hidden shadow-lg">
-          <img className="w-full" src={cream} alt="screenshot" />
+          <img className="w-full" src={cream} alt="a screenshot of a blog " />
           <div className="px-6 py-4">
             <div className="font-bold text-xl text-center mb-2">
               Unbreakable Cream
@@ -169,7 +181,7 @@ const Projects = () => {
       {/* Card 6 */}
       <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg shadow-[rgba(0,_0,_0,_1)_0px_30px_90px] mx-auto mb-8 p-6 mt-5 lg:mt-0">
         <div className="rounded overflow-hidden shadow-lg">
-          <img className="w-full" src={ecom} alt="screenshot" />
+          <img className="w-full" src={ecom} alt="a screenshot of a cli" />
           <div className="px-6 py-4">
             <div className="font-bold text-xl text-center mb-2">
               Windy E-Commerce Site

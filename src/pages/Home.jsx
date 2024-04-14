@@ -6,15 +6,18 @@ const Home = () => {
       <h1 className="mb-6 text-5xl font-bold text-black">
         Salvatore Mammoliti
       </h1>
-      <h3 className="mb-8 text-3xl font-bold text-black">
+      <h2 className="mb-8 text-3xl font-bold text-black">
         Full-Stack Web Developer
-      </h3>
-      {/* Use button element to navigate to portfolio page */}
-      <button className="bg-black hover:bg-accent text-white font-bold py-2 px-4 rounded shadow">
-        <Link to="/Projects" className="hover:no-underline focus:no-underline">
+      </h2>
+      {/* Use Link component directly on a clickable element */}
+      <div className="inline-block">
+        <Link
+          to="/Projects"
+          className="bg-black hover:bg-accent text-white font-bold py-2 px-4 rounded shadow no-underline focus:no-underline"
+        >
           Have a look at my work!
         </Link>
-      </button>
+      </div>
     </div>
   );
 };

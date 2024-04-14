@@ -4,8 +4,8 @@ const currentYear = new Date().getFullYear();
 
 export function FooterWithSocialLinks() {
   return (
-    <footer className="fixed bottom-0 left-0 right-0 flex justify-between items-center mx-auto p-7 text-lg w-full overflow-y-auto">
-      <div className="flex items-center">
+    <footer className="fixed bottom-0 left-0 right-0 flex justify-between items-center mx-auto p-7 text-lg w-full z-10">
+      <div className="flex items-center text-black">
         <a
           href="https://github.com/topcowmoo"
           target="_blank"
@@ -14,7 +14,7 @@ export function FooterWithSocialLinks() {
         >
           Salvatore Mammoliti
         </a>
-        <div className="ml-2 text-xs text-black">&copy; {currentYear}</div>
+        <div className="ml-2 text-xs">&copy; {currentYear}</div>
       </div>
       <div className="flex gap-4">
         <a

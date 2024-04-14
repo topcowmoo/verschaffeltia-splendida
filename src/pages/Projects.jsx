@@ -16,7 +16,7 @@ const Projects = () => {
   return (
     <div className="p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
       {/* Card 1 */}
-      <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-2xl border-4 border-black mt-[-20px]">
+      <div className= "bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg shadow-[rgba(0,_0,_0,_1)_0px_30px_90px] mx-auto mb-8 p-6 mt-5 lg:mt-0">
         <div className="rounded overflow-hidden shadow-lg">
           <img className="w-full" src={mvc} alt="screenshot" />
           <div className="px-6 py-4">
@@ -46,7 +46,7 @@ const Projects = () => {
         </div>
       </div>
       {/* Card 2 */}
-      <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-2xl border-4 border-black mt-[-20px]">
+      <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg shadow-[rgba(0,_0,_0,_1)_0px_30px_90px] mx-auto mb-8 p-6 mt-5 lg:mt-0">
         <div className="rounded overflow-hidden shadow-lg">
           <img className="w-full" src={mongo} alt="screenshot" />
           <div className="px-6 py-4">
@@ -75,7 +75,7 @@ const Projects = () => {
         </div>
       </div>
       {/* Card 3 */}
-      <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-2xl border-4 border-black mt-[-20px]">
+      <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg shadow-[rgba(0,_0,_0,_1)_0px_30px_90px] mx-auto mb-8 p-6 mt-5 lg:mt-0">
         <div className="rounded overflow-hidden shadow-lg">
           <img className="w-full" src={pwa} alt="screenshot" />
           <div className="px-6 py-4">
@@ -106,7 +106,7 @@ const Projects = () => {
         </div>
       </div>
       {/* Card 4 */}
-      <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-2xl border-4 border-black mt-[-20px]">
+      <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg shadow-[rgba(0,_0,_0,_1)_0px_30px_90px] mx-auto mb-8 p-6 mt-5 lg:mt-0">
         <div className="rounded overflow-hidden shadow-lg">
           <img className="w-full" src={api} alt="screenshot" />
           <div className="px-6 py-4">
@@ -137,7 +137,7 @@ const Projects = () => {
         </div>
       </div>
       {/* Card 5 */}
-      <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-2xl border-4 border-black mt-[-20px]">
+      <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg shadow-[rgba(0,_0,_0,_1)_0px_30px_90px] mx-auto mb-8 p-6 mt-5 lg:mt-0">
         <div className="rounded overflow-hidden shadow-lg">
           <img className="w-full" src={cream} alt="screenshot" />
           <div className="px-6 py-4">
@@ -167,7 +167,7 @@ const Projects = () => {
         </div>
       </div>
       {/* Card 6 */}
-      <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-2xl border-4 border-black mt-[-20px]">
+      <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg shadow-[rgba(0,_0,_0,_1)_0px_30px_90px] mx-auto mb-8 p-6 mt-5 lg:mt-0">
         <div className="rounded overflow-hidden shadow-lg">
           <img className="w-full" src={ecom} alt="screenshot" />
           <div className="px-6 py-4">
@@ -187,7 +187,7 @@ const Projects = () => {
                 href="https://drive.google.com/file/d/1q_LhyzKBZ6-6fw9hbPgev_rvDWNz-TUh/view"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black hover:bg-accent text-white font-bold py-2 px-4 rounded shadow-lg inline-flex items-center mr-4"
+                className="bg-black hover:bg-accent text-white font-bold py-2 px-4 rounded shadow-lg inline-flex items-center"
               >
                 <SiScreencastify className="mr-1" /> Demo
               </a>

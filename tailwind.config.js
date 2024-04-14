@@ -8,8 +8,7 @@ export default {
       },
       colors: {
         mygray: "#454545",
-        accent: "	#f2edde",
-        accent2: "#65A2FF",
+        accent: "#ff007f",
       },
     },
   },

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import classNames from "classnames";
+import "animate.css";
 
 function Navbar() {
   const [isActive, setIsActive] = useState(false);
@@ -17,14 +18,14 @@ function Navbar() {
   return (
     <div className="App">
       <header className="App-header">
-        <nav className="sticky bottom-0 flex items-center justify-between px-4 py-2 text-black text-lg">
+        <nav className="sticky bottom-0 flex items-center justify-between px-4 py-2 text-black text-2xl">
           <ul className={`md:flex ${isActive ? "block" : "hidden"}`}>
             <li onClick={removeActive}>
               <Link
                 to="/"
                 className={classNames("block px-2 py-1 hover:text-accent", {
                   "text-accent": location.pathname === "/",
-                  "animate-pulse": location.pathname === "/",
+                  "animate__animated animate__swing": location.pathname === "/",
                 })}
               >
                 Home
@@ -35,7 +36,7 @@ function Navbar() {
                 to="/about"
                 className={classNames("block px-2 py-1 hover:text-accent", {
                   "text-accent": location.pathname === "/about",
-                  "animate-pulse": location.pathname === "/about",
+                  "animate__animated animate__swing": location.pathname === "/about",
                 })}
               >
                 Me
@@ -46,7 +47,7 @@ function Navbar() {
                 to="/projects"
                 className={classNames("block px-2 py-1 hover:text-accent", {
                   "text-accent": location.pathname === "/projects",
-                  "animate-pulse": location.pathname === "/projects",
+                  "animate__animated animate__swing": location.pathname === "/projects",
                 })}
               >
                 Projects
@@ -57,7 +58,7 @@ function Navbar() {
                 to="/contact"
                 className={classNames("block px-2 py-1 hover:text-accent", {
                   "text-accent": location.pathname === "/contact",
-                  "animate-pulse": location.pathname === "/contact",
+                  "animate__animated animate__swing": location.pathname === "/contact",
                 })}
               >
                 Contact
@@ -68,7 +69,7 @@ function Navbar() {
                 to="/resume"
                 className={classNames("block px-2 py-1 hover:text-accent", {
                   "text-accent": location.pathname === "/resume",
-                  "animate-pulse": location.pathname === "/resume",
+                  "animate__animated animate__swing": location.pathname === "/resume",
                 })}
               >
                 Resume
@@ -79,7 +80,7 @@ function Navbar() {
           <div className="md:hidden">
             <button onClick={toggleActiveClass}>
               <svg
-                className="w-6 h-6 text-white"
+                className="w-6 h-6 text-mygray"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

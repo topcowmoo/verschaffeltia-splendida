@@ -2,7 +2,7 @@
 import { Outlet } from "react-router-dom";
 import { FooterWithSocialLinks } from "./components/Footer";
 import "./index.css";
-import background from "./assets/images/Technology.png";
+import background from "./assets/images/flwater.png";
 import Header from "./components/Header";
 
 function App() {

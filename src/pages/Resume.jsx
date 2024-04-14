@@ -59,7 +59,7 @@ const Resume = () => {
           </div>
           <div className="flex justify-center mt-4">
             <button
-              className="bg-mygray hover:bg-accent text-white hover:text-mygray font-bold py-2 px-4 rounded shadow-lg"
+              className="bg-mygray hover:bg-accent text-white font-bold py-2 px-4 rounded shadow-lg"
               onClick={handleDownload}
             >
               Download Resume

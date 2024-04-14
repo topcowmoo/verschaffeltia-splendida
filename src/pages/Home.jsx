@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="px-6 py-20 text-center text-surface dark:bg-neutral-700 dark:text-white">
+    <div className="px-6 py-20 text-left ml-10 mt-20 text-surface dark:text-white">
       <h1 className="mb-6 text-5xl font-bold text-mygray">
         Salvatore Mammoliti
       </h1>
@@ -10,7 +10,7 @@ const Home = () => {
         Full-Stack Web Developer
       </h3>
       {/* Use button element to navigate to portfolio page */}
-      <button className="bg-mygray hover:bg-accent text-white hover:text-mygray font-bold py-2 px-4 rounded shadow">
+      <button className="bg-mygray hover:bg-accent text-white font-bold py-2 px-4 rounded shadow">
         <Link to="/Projects" className="hover:no-underline focus:no-underline">
           Have a look at my work!
         </Link>

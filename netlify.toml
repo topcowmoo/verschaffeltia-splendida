@@ -1,4 +1,4 @@
-[[redirects]]
-  from = "/*"
-  to = "/"
-  status = 200
+[[redirects]]  # Define a redirect rule
+from = "/*"    # Redirect from any path
+to = "/"       # Redirect to the root path
+status = 200   # Use 200 status code for the redirect

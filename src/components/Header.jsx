@@ -1,13 +1,15 @@
-// Header.js
+// Importing Navbar component
 import Navbar from "./Navbar";
 
+// Define Header functional component
 function Header() {
+  // Return JSX for Header component
   return (
     <header className="relative overflow-hidden flex justify-between items-center">
-      {/* Your logo */}
+      {/* Logo */}
       <div className="flex items-center">
+        {/* Logo text */}
         <h1 className="text-3xl text-black ml-4">S<span className="text-accent text-4xl">/</span>M</h1>
-        {/* You can style the logo as needed */}
       </div>
       
       {/* Include Navbar component */}
@@ -16,4 +18,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Header; // Export Header component as default

@@ -1,5 +1,6 @@
 import { useFormik } from "formik";
 
+// Validation function for form fields
 const validate = (values) => {
   const errors = {};
   if (!values.name) {
@@ -20,25 +21,30 @@ const validate = (values) => {
     errors.message = "Must be 25 characters or less";
   }
 
-  return errors;
+  return errors; // Return validation errors
 };
 
+// Define Contact functional component
 const Contact = () => {
+  // Initialize formik hook with form values, validation function, and submission handler
   const formik = useFormik({
     initialValues: {
       name: "",
       email: "",
       message: "",
     },
-    validate,
+    validate, // Apply validation function to form fields
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      alert(JSON.stringify(values, null, 2)); // Display form values on submission
     },
   });
 
+  // Return JSX for contact form display
   return (
     <div className="max-w-md mx-auto mt-8">
+      {/* Form container */}
       <form onSubmit={formik.handleSubmit} className="bg-gray-50 bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-[rgba(0,_0,_0,_1)_0px_30px_90px]">
+        {/* Name input field */}
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-700">Name</label>
           <input
@@ -49,8 +55,10 @@ const Contact = () => {
             value={formik.values.name}
             className="mt-1 p-2 w-full border border-gray-200 rounded-md focus:outline-none focus:ring-myaccent focus:border-myaccent"
           />
+          {/* Display name validation error */}
           {formik.errors.name ? <div className="text-red-500">{formik.errors.name}</div> : null}
         </div>
+        {/* Email input field */}
         <div className="mb-4">
           <label htmlFor="email" className="block text-gray-700">Email Address</label>
           <input
@@ -61,8 +69,10 @@ const Contact = () => {
             value={formik.values.email}
             className="mt-1 p-2 w-full border border-gray-200 rounded-md focus:outline-none focus:ring-myaccent focus:border-myaccent"
           />
+          {/* Display email validation error */}
           {formik.errors.email ? <div className="text-red-500">{formik.errors.email}</div> : null}
         </div>
+        {/* Message input field */}
         <div className="mb-4">
           <label htmlFor="message" className="block text-gray-700">Message</label>
           <textarea
@@ -72,8 +82,10 @@ const Contact = () => {
             value={formik.values.message}
             className="mt-1 p-2 w-full border border-gray-200 rounded-md focus:outline-none focus:ring-myaccent focus:border-myaccent"
           />
+          {/* Display message validation error */}
           {formik.errors.message ? <div className="text-red-500">{formik.errors.message}</div> : null}
         </div>
+        {/* Submit button */}
         <div className="flex justify-center">
           <button
             type="submit"
@@ -87,4 +99,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact; // Export Contact component as default

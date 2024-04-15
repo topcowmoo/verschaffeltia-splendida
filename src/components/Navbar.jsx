@@ -1,25 +1,35 @@
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import classNames from "classnames";
-import "animate.css";
+import { useState } from "react"; // Importing useState hook
+import { Link, useLocation } from "react-router-dom"; // Importing Link and useLocation from react-router-dom
+import classNames from "classnames"; // Importing classNames library for conditional classnames
+import "animate.css"; // Importing animate.css library
 
+// Define Navbar functional component
 function Navbar() {
+  // Define state for toggling active class
   const [isActive, setIsActive] = useState(false);
+  // Get the current location
   const location = useLocation();
 
+  // Function to toggle active class
   const toggleActiveClass = () => {
     setIsActive(!isActive);
   };
 
+  // Function to remove active class
   const removeActive = () => {
     setIsActive(false);
   };
 
+  // Return JSX for Navbar component
   return (
     <div className="App">
+      {/* Header with navigation */}
       <header className="App-header">
+        {/* Navigation menu */}
         <nav className="sticky bottom-0 flex items-center justify-between px-4 py-2 text-black text-2xl">
+          {/* List of navigation links */}
           <ul className={`md:flex ${isActive ? "block" : "hidden"}`}>
+            {/* Home link */}
             <li onClick={removeActive}>
               <Link
                 to="/"
@@ -31,6 +41,7 @@ function Navbar() {
                 Home
               </Link>
             </li>
+            {/* About link */}
             <li onClick={removeActive}>
               <Link
                 to="/about"
@@ -42,6 +53,7 @@ function Navbar() {
                 Me
               </Link>
             </li>
+            {/* Projects link */}
             <li onClick={removeActive}>
               <Link
                 to="/projects"
@@ -53,6 +65,7 @@ function Navbar() {
                 Projects
               </Link>
             </li>
+            {/* Contact link */}
             <li onClick={removeActive}>
               <Link
                 to="/contact"
@@ -64,6 +77,7 @@ function Navbar() {
                 Contact
               </Link>
             </li>
+            {/* Resume link */}
             <li onClick={removeActive}>
               <Link
                 to="/resume"
@@ -77,8 +91,10 @@ function Navbar() {
             </li>
           </ul>
 
+          {/* Button to toggle navigation menu on small screens */}
           <div className="md:hidden" aria-label="Toggle navigation menu">
             <button onClick={toggleActiveClass}>
+              {/* Hamburger menu icon */}
               <svg
                 className="w-6 h-6 text-black"
                 fill="none"
@@ -100,4 +116,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar; // Export Navbar component as default

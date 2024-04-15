@@ -2,8 +2,8 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/topcowmoo/verschaffeltia-splendida" target="_blank">
-    <img src="./src/assets/images/logo.png" alt="Logo" width="100" height="100">
+  <a href="https://github.com/topcowmoo/verschaffeltia-splendida">
+    <img src="./src/assets/images/logo.png" alt="Logo">
   </a>
 
 <h3 align="center">React Portfolio</h3>
@@ -13,14 +13,14 @@ This project is a single page app React Portfolio, designed to showcase my work 
 
 <br />
   <br />
-    <a href="https://github.com/topcowmoo/verschaffeltia-splendida" target="_blank"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/topcowmoo/verschaffeltia-splendida"></a><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://verschaffeltia-splendida.netlify.app/" target="_blank">Deployed App on Netlify</a>
+    <a href="https://verschaffeltia-splendida.netlify.app/"></a>Deployed App on Netlify</a>
     ·
-    <a href="https://github.com/topcowmoo/verschaffeltia-splendida/issues" target="_blank">Report Bug</a>
+    <a href="https://github.com/topcowmoo/verschaffeltia-splendida/issues">Report Bug</a>
     ·
-    <a href="https://github.com/topcowmoo/verschaffeltia-splendida/issues" target="_blank">Request Feature</a>
+    <a href="https://github.com/topcowmoo/verschaffeltia-splendida/issues">Request Feature</a>
 
   </p>
 </div>
@@ -121,11 +121,11 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
-Salvatore Mammoliti - [@github](https://github.com/topcowmoo){:target="\_blank"} - mammoliti.sam@gmail.com
+Salvatore Mammoliti - [@github](https://github.com/topcowmoo) - mammoliti.sam@gmail.com
 
-Project Link: [https://github.com/topcowmoo/verschaffeltia-splendida](https://github.com/topcowmoo/verschaffeltia-splendida){:target="\_blank"}
+Project Link: [https://github.com/topcowmoo/verschaffeltia-splendida](https://github.com/topcowmoo/verschaffeltia-splendida)
 
-Netlify Link: [https://verschaffeltia-splendida.netlify.app/](https://verschaffeltia-splendida.netlify.app/){:target="\_blank"}
+Netlify Link: [https://verschaffeltia-splendida.netlify.app/](https://verschaffeltia-splendida.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,16 +133,16 @@ Netlify Link: [https://verschaffeltia-splendida.netlify.app/](https://verschaffe
 
 ## Acknowledgments
 
-- [Pair Programing with Sahil Banati](https://github.com/sbanati){:target="\_blank"}
-- [Vite](https://vitejs.dev/){:target="\_blank"}
-- [React](https://react.dev/){:target="\_blank"}
-- [Formik](https://formik.org/docs/tutorial){:target="\_blank"}
-- [Netlify](https://www.netlify.com/){:target="\_blank"}
-- [Tailwindcss](https://tailwindcss.com/){:target="\_blank"}
-- [Adobe Express](https://new.express.adobe.com/){:target="\_blank"}
-- [ChatGPT](https://chat.openai.com/){:target="\_blank"}
-- [Best README Template](https://github.com/othneildrew/Best-README-Template){:target="\_blank"}
-- [Simple Icons](https://simpleicons.org/){:target="\_blank"}
+- [Pair Programing with Sahil Banati](https://github.com/sbanati)
+- [Vite](https://vitejs.dev/)
+- [React](https://react.dev/)
+- [Formik](https://formik.org/docs/tutorial)
+- [Netlify](https://www.netlify.com/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [Adobe Express](https://new.express.adobe.com/)
+- [ChatGPT](https://chat.openai.com/)
+- [Best README Template](https://github.com/othneildrew/Best-README-Template)
+- [Simple Icons](https://simpleicons.org/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

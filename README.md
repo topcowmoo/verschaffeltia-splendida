@@ -9,14 +9,16 @@
 <h3 align="center">React Portfolio</h3>
 
   <p align="center">
-   This project is an API for a social network web application, designed to facilitate sharing thoughts, reacting to friends' thoughts, and managing friend lists. Built using Express.js, MongoDB and Mongoose, the API provides a robust foundation for handling user interactions and data management within the application. The README includes instructions for setup and usage, along with a link to a walkthrough video demonstrating the API's functionality.
+This project is a single page app React Portfolio, designed to showcase my work and skills. Built using Vite for fast development, Tailwind CSS for styling, and Formik for form management, the portfolio includes sections for displaying my projects, contacting me among others. It provides a clean and modern interface for potential employers or clients to explore my portfolio. Please check out the deployed version, which is hosted on Netlify (link below). Thank you.
 
+<br />
   <br />
-    <a href="https://github.com/topcowmoo/verschaffeltia-splendida"><strong>Explore the docs</strong></a>
+    <a href="https://github.com/topcowmoo/verschaffeltia-splendida"><strong>Explore the docs »</strong></a>
     <br />
     <br />
+    <a href="https://verschaffeltia-splendida.netlify.app/">Deployed App on Netlify</a>
     ·
-    <a href="hhttps://github.com/topcowmoo/verschaffeltia-splendida/issues">Report Bug</a>
+    <a href="https://github.com/topcowmoo/verschaffeltia-splendida/issues">Report Bug</a>
     ·
     <a href="https://github.com/topcowmoo/verschaffeltia-splendida/issues">Request Feature</a>
 
@@ -86,7 +88,7 @@ Resume Page:
 
 ### Installation
 
-<!-- 1. Clone the repo to your local machince.
+1. Clone the repo to your local machince.
    ```sh
    git clone https://github.com/topcowmoo/verschaffeltia-splendida
    ```
@@ -94,12 +96,9 @@ Resume Page:
    ````sh
    npm install
    ````
-3. Set up MongoDB and ensure its running on your local machine
-   ````
-
-4. Start the server from the terminal
+3. Start the server from the terminal
    ````sh
-   npm start -->
+   npm run start
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,6 +127,8 @@ Salvatore Mammoliti - [@github](https://github.com/topcowmoo) - mammoliti.sam@gm
 
 Project Link: [https://github.com/topcowmoo/verschaffeltia-splendida](https://github.com/topcowmoo/verschaffeltia-splendida)
 
+Netlify Link: [https://verschaffeltia-splendida.netlify.app/](https://verschaffeltia-splendida.netlify.app/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
@@ -140,6 +141,7 @@ Project Link: [https://github.com/topcowmoo/verschaffeltia-splendida](https://gi
 - [Formik](https://formik.org/docs/tutorial)
 - [Netlify](https://www.netlify.com/)
 - [Tailwindcss](https://tailwindcss.com/)
+- [Adobe Express](https://new.express.adobe.com/)
 - [ChatGPT](https://chat.openai.com/)
 - [Best README Template](https://github.com/othneildrew/Best-README-Template)
 - [Simple Icons](https://simpleicons.org/)
@@ -152,9 +154,3 @@ Project Link: [https://github.com/topcowmoo/verschaffeltia-splendida](https://gi
 ![GitHub language stats](https://img.shields.io/github/languages/top/topcowmoo/verschaffeltia-splendida)
 
 ![Languages](https://img.shields.io/github/languages/count/topcowmoo/verschaffeltia-splendida)
-
-
-
-
-
-

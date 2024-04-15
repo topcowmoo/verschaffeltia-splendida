@@ -12,17 +12,16 @@
 This project is a single page app React Portfolio, designed to showcase my work and skills. Built using Vite for fast development, Tailwind CSS for styling, and Formik for form management, the portfolio includes sections for displaying my projects, contacting me among others. It provides a clean and modern interface for potential employers or clients to explore my portfolio. Please check out the deployed version, which is hosted on Netlify (link below). Thank you.
 
 <br />
-  <br />
-    <a href="https://github.com/topcowmoo/verschaffeltia-splendida"></a><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://verschaffeltia-splendida.netlify.app/"></a>Deployed App on Netlify</a>
-    ·
-    <a href="https://github.com/topcowmoo/verschaffeltia-splendida/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/topcowmoo/verschaffeltia-splendida/issues">Request Feature</a>
-
-  </p>
+<br />
+<a href="https://github.com/topcowmoo/verschaffeltia-splendida"><strong>Explore the docs »</strong></a>
+<br />
+<br />
+<a href="https://verschaffeltia-splendida.netlify.app/">Deployed App on Netlify</a>
+·
+<a href="https://github.com/topcowmoo/verschaffeltia-splendida/issues">Report Bug</a>
+·
+<a href="https://github.com/topcowmoo/verschaffeltia-splendida/issues">Request Feature</a>
+</p>
 </div>
 
 <!-- TABLE OF CONTENTS -->

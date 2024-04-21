@@ -18,7 +18,7 @@ export function FooterWithSocialLinks() {
           rel="noopener noreferrer"
           className="text-black hover:text-accent"
         >
-          Salvatore Mammoliti
+          Salvatore Mammoliti &#x2665; M
         </a>
         {/* Display current year */}
         <div className="ml-2 text-xs">&copy; {currentYear}</div>

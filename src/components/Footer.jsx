@@ -18,10 +18,14 @@ export function FooterWithSocialLinks() {
           rel="noopener noreferrer"
           className="text-black hover:text-accent"
         >
-          Salvatore Mammoliti &#x2665; M
+          Salvatore Mammoliti
         </a>
         {/* Display current year */}
-        <div className="ml-2 text-xs">&copy; {currentYear}</div>
+        <div className="ml-2 text-xs flex items-center">
+        <span>&copy; {currentYear}</span>
+          <span className="heart-symbol text-accent text-sm ml-1 animate__animated animate__heartBeat animate__slow animate__infinite">&#x2665;</span>
+          <span className="font-bold ml-1">M</span>
+        </div>
       </div>
       {/* Right section containing social links */}
       <div className="flex gap-4">

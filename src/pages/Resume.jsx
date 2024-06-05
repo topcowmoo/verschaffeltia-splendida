@@ -25,7 +25,7 @@ import {
 const Resume = () => {
   // URL for downloading resume
   const resumeDownloadUrl =
-    "https://drive.google.com/uc?export=download&id=1hSb_Z3L3Jpcy1EhqLFv25VVbkN86aSm4";
+    "https://drive.google.com/uc?export=download&id=1_zlSw1E_vjtGn4QgCjAa6a468X7raNoa";
 
   // Function to handle resume download
   const handleDownload = () => {

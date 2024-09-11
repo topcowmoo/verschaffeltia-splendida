@@ -1,5 +1,10 @@
 // Importing necessary icons from react-icons library
-import { SiGithub, SiLinkedin, SiFrontendmentor } from "react-icons/si";
+import {
+  SiGithub,
+  SiLinkedin,
+  SiFrontendmentor,
+  SiWakatime,
+} from "react-icons/si";
 
 // Getting the current year
 const currentYear = new Date().getFullYear();
@@ -22,13 +27,26 @@ export function FooterWithSocialLinks() {
         </a>
         {/* Display current year */}
         <div className="ml-2 text-xs flex items-center">
-        <span>&copy; {currentYear}</span>
-          <span className="heart-symbol text-accent text-sm ml-1 animate__animated animate__heartBeat animate__slow animate__infinite">&#x2665;</span>
+          <span>&copy; {currentYear}</span>
+          <span className="heart-symbol text-accent text-sm ml-1 animate__animated animate__heartBeat animate__slow animate__infinite">
+            &#x2665;
+          </span>
           <span className="font-bold ml-1">M</span>
         </div>
       </div>
       {/* Right section containing social links */}
       <div className="flex gap-4">
+        {/* Link to GitHub profile */}
+        <a
+          href="https://github.com/topcowmoo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-myaccent hover:text-accent"
+          title="Github Profile"
+        >
+          <SiGithub size={36} />
+        </a>
+
         {/* Link to LinkedIn profile */}
         <a
           href="https://www.linkedin.com/in/salvatore-mammoliti-694b6b28b/"
@@ -39,6 +57,17 @@ export function FooterWithSocialLinks() {
         >
           <SiLinkedin size={36} />
         </a>
+
+        {/* Link to WakaTime profile */}
+        <a
+          href="https://wakatime.com/@topcowmoo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-myaccent hover:text-accent"
+          title="WakaTime Profile"
+        >
+          <SiWakatime size={36} />
+        </a>
         {/* Link to Frontend Mentor profile */}
         <a
           href="https://www.frontendmentor.io/profile/topcowmoo"
@@ -48,16 +77,6 @@ export function FooterWithSocialLinks() {
           title="Frontend Mentor Profile"
         >
           <SiFrontendmentor size={36} />
-        </a>
-        {/* Link to GitHub profile */}
-        <a
-          href="https://github.com/topcowmoo"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-myaccent hover:text-accent"
-          title="Github Profile"
-        >
-          <SiGithub size={36} />
         </a>
       </div>
     </footer>
